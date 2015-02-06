@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ act()
+comment0.text=\n\ Act\ -\ This\ method\ is\ called\ whenever\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\ \n\ This\ Will\ Check\ whether\ Gumball\ is\ Displayed\ on\ Screen\ or\ Not,\ \n\ if\ Value\ is\ false\ it'll\ Remove\ the\ Message\ of\ Ball\ Ejected\ by\ Picker\ Alien.\n
+numComments=1

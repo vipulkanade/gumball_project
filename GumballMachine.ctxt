@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=GumballMachine()
+comment0.text=\n\ GumballMachine\ Constructor\n
+comment1.params=
+comment1.target=void\ act()
+comment1.text=\n\ Act\ -\ This\ method\ is\ called\ whenever\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n\ This\ Method\ will\ invoke\ Gumball\ Machine\ to\ accept\ Coins\ and\n\ If\ Crank\ turned,\ after\ receiving\ coin,\ forward\ the\ execution\ to\ Inspector\ for\ Inspection.\n
+comment2.params=
+comment2.target=boolean\ insertCoin()
+comment2.text=\n\ Function\ to\ Check\ whether\ coin\ can\ be\ inserted\ or\ not.\n\ @returns\ -\ true,\ if\ coin\ can\ be\ inserted\n\ \ \ \ \ \ \ \ \ \ \ false,\ if\ not\n
+comment3.params=
+comment3.target=void\ removeCoin()
+comment3.text=\n\ Function\ to\ remove\ coin\ and\ inserting\ it\ in\ Gumball\ Machine\ from\ the\ Screen.\n
+numComments=4

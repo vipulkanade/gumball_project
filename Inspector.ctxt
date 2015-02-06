@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ act()
+comment0.text=\n\ Act\ -This\ method\ is\ called\ whenever\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n\ This\ method\ checks\ if\ received\ coin\ is\ Quarter\ and\ valid,\ if\ valid,\ it'l\ randomly\ select\ RandomPicker\ or\ GreenPicker\ to\ disperse\ a\ Gumball.\n\ if\ invalid\ coin\ received\ it'll\ show\ appropriate\ message.\n
+comment1.params=
+comment1.target=boolean\ isQuarterCheck()
+comment1.text=\n\ Function\ to\ Check\ whether\ received\ coin\ is\ Penny\ or\ Quarter.\n\ If\ Quarter\ Received,\ check\ if\ it\ is\ Real\ or\ Fake.\n\ @returns\ \:\ True\ -\ if\ Quarter\ is\ valid\n\ \ \ \ \ \ \ \ \ \ \ \ False\ -\ if\ invalid\ coin(other\ then\ a\ valid\ quarter).\n
+comment2.params=
+comment2.target=void\ setValuesToRestartMachine()
+comment2.text=\n\ Function\ to\ set\ values,\ this\ will\ ensure\ that\ when\ a\ Penny\ or\ Fake\ Qarter\ is\ received,\ the\ Gumball\ machine\ rejects\ it\n\ and\ is\ ready\ to\ accept\ new\ coin.\n
+numComments=3
