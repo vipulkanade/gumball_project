@@ -15,7 +15,7 @@ public class InvalidCoin extends Message
      */
     public void act() 
     {
-        if( !((GumballWorld)getWorld()).getIsInValidCoin() ) {
+        if( !((GumballMachine)getWorld()).getIsInValidCoin() ) {
             getWorld().removeObject(this) ;
         }
     }    

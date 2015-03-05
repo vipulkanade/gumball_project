@@ -15,7 +15,7 @@ public class BallEjected extends Message
      */
     public void act() 
     {
-        if ( !((GumballWorld)getWorld()).getIsBallDisplayed() ) {
+        if ( !((GumballMachine)getWorld().getObjects(_cls_)).getIsBallDisplayed() ) {
             getWorld().removeObject(this) ;
         }
     }    

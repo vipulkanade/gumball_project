@@ -17,10 +17,13 @@ public class Inspector extends Alien
      */
     public void act() 
     {
-        alienPickerList = getWorld().getObjects(Picker.class);
-        if (((GumballWorld)getWorld()).getCrankTurned()) {
+              
+    }
+    
+    public void inspectCoin(Coin coin) {
+    alienPickerList = getWorld().getObjects(Picker.class);
             // Check if received coin is Quarter or not.
-            if ( isQuarterCheck() ) {
+            if ( isQuarterCheck(coin) ) {
                 // Check whether List is not null or contains zero elements
                  if (alienPickerList != null && alienPickerList.size() > 0) {
                      //to pick a Random ALien to Distribute Gumball
@@ -28,7 +31,6 @@ public class Inspector extends Alien
                      alienPickerList.get(Greenfoot.getRandomNumber(alienPickerList.size())).pick();
                 }
             }
-        }        
     }
     
     /**
@@ -37,15 +39,15 @@ public class Inspector extends Alien
      * @returns : True - if Quarter is valid
      *            False - if invalid coin(other then a valid quarter).
      */
-    private boolean isQuarterCheck() {
-        if ( ((GumballWorld)getWorld()).getCoin() instanceof Quarter ) {
-            if ( ((GumballWorld)getWorld()).getCoin() instanceof FakeQuarter ) {
+    private boolean isQuarterCheck(Coin coin) {
+        if ( ((GumballMachine)getWorld()).getCoin() instanceof Quarter ) {
+            if ( ((GumballMachine)getWorld()).getCoin() instanceof FakeQuarter ) {
                  setValuesToRestartMachine() ;
                  return false ;
             } else {
                    return true ;   
             }
-        } else if ( ((GumballWorld)getWorld()).getCoin() instanceof Penny ) {
+        } else if ( ((GumballMachine)getWorld()).getCoin() instanceof Penny ) {
             setValuesToRestartMachine() ;
             return false ;
         }
@@ -58,11 +60,11 @@ public class Inspector extends Alien
      */
     private void setValuesToRestartMachine() {
         // Add Message of Invalid Coin for User
-        ((GumballWorld)getWorld()).addObject(new InvalidCoin(), 375, 500) ;
+        ((GumballMachine)getWorld()).addObject(new InvalidCoin(), 375, 500) ;
         
         //Reset Value to accept Coin in Gumball machine.
-        ((GumballWorld)getWorld()).setIsInValidCoinTrue() ;
-        ((GumballWorld)getWorld()).setCrankTurnedfalse() ;
-        ((GumballWorld)getWorld()).setAllowCoinTrue();
+        ((GumballMachine)getWorld()).setIsInValidCoinTrue() ;
+       // ((GumballWorld)getWorld()).setCrankTurnedfalse() ;
+        ((GumballMachine)getWorld()).setAllowCoinTrue();
     }
 }

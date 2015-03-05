@@ -15,7 +15,7 @@ public class BlueGumball extends Gumball
      */
     public void act() 
     {
-        if (!((GumballWorld)getWorld()).getIsBallDisplayed()) {
+        if (!((GumballMachine)getWorld()).getIsBallDisplayed()) {
             getWorld().removeObject(this) ;
         }
     }    

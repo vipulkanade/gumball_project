@@ -19,9 +19,9 @@ public class GreenPicker extends Picker
             
             // As the Work of Green Picker is completed,
             // Reset Values for Gumball Machine to accept the coins further.
-            ((GumballWorld)getWorld()).setIsBallDisplayedTrue() ;
-            ((GumballWorld)getWorld()).setAllowCoinTrue();
+            ((GumballMachine)getWorld()).setIsBallDisplayedTrue() ;
+            ((GumballMachine)getWorld()).setAllowCoinTrue();
             //This will disable Inspector Act Method from running unless it should and as specified by Gumball Machine
-            ((GumballWorld)getWorld()).setCrankTurnedfalse() ;
+            //((GumballWorld)getWorld()).setCrankTurnedfalse() ;
     }
 }

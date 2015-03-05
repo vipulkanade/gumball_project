@@ -16,7 +16,7 @@ public class InsertCoin extends Message
      */
     public void act() 
     {
-        if( !((GumballWorld)getWorld()).getAllowCoin() ) {
+        if( !((GumballMachine)getWorld()).getAllowCoin() ) {
             getWorld().removeObject(this) ;
         }
     }    

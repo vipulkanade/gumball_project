@@ -36,9 +36,9 @@ public class RandomPicker extends Picker
             //Display Ejected Gumball
             getWorld().addObject(new BallEjected(), 720, 240) ;
             //As the random Picker work is completed after ejecting Gumball, reset values to accept Coin from Machine
-            ((GumballWorld)getWorld()).setIsBallDisplayedTrue() ;
-            ((GumballWorld)getWorld()).setAllowCoinTrue();
+            ((GumballMachine)getWorld()).setIsBallDisplayedTrue() ;
+            ((GumballMachine)getWorld()).setAllowCoinTrue();
             //This will disable Inspector Act Method from running unless it should and as specified by Gumball Machine
-            ((GumballWorld)getWorld()).setCrankTurnedfalse() ;
+            //((GumballWorld)getWorld()).setCrankTurnedfalse() ;
     }
 }
